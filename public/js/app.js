@@ -1,20 +1,20 @@
 // Scroll suave para link interno
-$('nav a').click(function(e){
+$('nav a').click(function (e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
-			menuHeight = $('nav').innerHeight(),
-			targetOffset = $(id).offset().top;
+		menuHeight = $('nav').innerHeight(),
+		targetOffset = $(id).offset().top;
 	$('html, body').animate({
 		scrollTop: targetOffset - menuHeight
 	}, 500);
 });
 
 // Debounce do Lodash
-debounce = function(func, wait, immediate) {
+debounce = function (func, wait, immediate) {
 	var timeout;
-	return function() {
+	return function () {
 		var context = this, args = arguments;
-		var later = function() {
+		var later = function () {
 			timeout = null;
 			if (!immediate) func.apply(context, args);
 		};
@@ -26,15 +26,15 @@ debounce = function(func, wait, immediate) {
 };
 
 // Animação ao Scroll
-(function(){
+(function () {
 	var $target = $('.anime'),
-			animationClass = 'anime-start',
-			offset = $(window).height() * 3/4;
+		animationClass = 'anime-start',
+		offset = $(window).height() * 3 / 4;
 
 	function animeScroll() {
 		var documentTop = $(document).scrollTop();
 
-		$target.each(function(){
+		$target.each(function () {
 			var itemTop = $(this).offset().top;
 			if (documentTop > itemTop - offset) {
 				$(this).addClass(animationClass);
@@ -46,7 +46,55 @@ debounce = function(func, wait, immediate) {
 
 	animeScroll();
 
-	$(document).scroll(debounce(function(){
+	$(document).scroll(debounce(function () {
 		animeScroll();
 	}, 200));
 })();
+
+
+// NAVBAR MOBILE
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
+  mobileNavbar.init();
+  
