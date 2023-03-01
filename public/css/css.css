@@ -4,32 +4,38 @@
   }
   
   a {
-    color: #fff;
+    color: #303842;
     text-decoration: none;
     transition: 0.3s;
   }
-  
   a:hover {
     opacity: 0.7;
+    color: #238f8d;
+    font-weight: bold;
   }
   
   .logo {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: #303842;
   }
+  
   
   nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
+    background: #fff;
     height: 8vh;
   }
-  
-  main {
+
+  .bg-header-main{
     background: url("../img/bg.jpg") no-repeat center center;
+  }
+
+  main {
     background-size: cover;
     height: 92vh;
   }
@@ -47,12 +53,14 @@
   .mobile-menu {
     display: none;
     cursor: pointer;
+    color: #303842;
   }
   
   .mobile-menu div {
     width: 32px;
     height: 2px;
     background: #fff;
+    color: #303842;
     margin: 8px;
     transition: 0.3s;
   }
@@ -67,7 +75,8 @@
       right: 0;
       width: 50vw;
       height: 92vh;
-      background: #23232e;
+      background: #ffffff;
+      color: #303842;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
@@ -110,3 +119,10 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
   
+
+/* CORES
+CINZA ESCURO: #303842
+VERDE: #238F8D
+
+
+*/
