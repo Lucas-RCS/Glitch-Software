@@ -103,7 +103,8 @@ nav {
 main {
   background-size: cover;
 }
-.arrow{
+
+.arrow {
   text-align: center;
   margin-top: -1.8%;
   width: 100%;
@@ -336,18 +337,22 @@ main {
     display: block;
     margin: auto;
   }
-  .container .title h1{
+
+  .container .title h1 {
     text-align: center;
     font-size: 30px;
   }
-  .container .article .button{
+
+  .container .article .button {
     text-align: center;
   }
-  .container .article .button a{
+
+  .container .article .button a {
     padding: 6px 15px;
     font-size: 16px;
   }
-  .container .social i{
+
+  .container .social i {
     font-size: 19px;
     height: 35px;
     width: 35px;
