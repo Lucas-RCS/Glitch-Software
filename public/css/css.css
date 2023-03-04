@@ -33,7 +33,7 @@ a:hover {
 }
 
 .bg-header-main {
-  background: url("../img/bg-test.jpg") no-repeat center center;
+  background: url("../img/bg2.jpg") no-repeat center center;
   height: 70vh;
 }
 
@@ -85,13 +85,13 @@ nav {
   margin-left: 32px;
 }
 
-#imgPerfil{
+.perfil{
   background-color: transparent;
   border-color: transparent;
   display: flex ;
 }
 
-#imgPerfil img{
+.perfil img{
   width: 65%;
   height: auto;
   background-image: url('../img/account-circle.png') no-repeat center center;
@@ -124,6 +124,8 @@ main {
   width: 100%;
   height: 100%;
 }
+
+/* about */
 
 .about {
   width: 100%;
@@ -231,14 +233,115 @@ main {
   transform: rotate(360deg);
 }
 
-
-
-
-.contact {
-  background-size: cover;
-  height: 92vh;
-  display: flex;
+/* contact */
+.contato {
+  background-color: #238f8d;
+  height: auto;
 }
+
+.contactUS{
+  position: relative;
+  width: 100%;
+  color: red;
+  padding: 40px 100px;
+}
+.contactUS .titlect{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.contactUS .titlect h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.contactUS .titlect h2::after {
+  content: "";
+  height: 5px;
+  width: 100px;
+  background-color: #303842;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+}
+
+/* form */
+
+
+.form{
+  grid-area: form;
+}
+.info{
+  grid-area: info;
+}
+.img{
+  grid-area: img;
+}
+.contact{
+  padding: 40px;
+  background-color: white;
+}
+
+.box{
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas: 
+  "form info" 
+  "form img";
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+/* 
+.formBox{
+  position: relative;
+  width: 100%;
+}
+.formBox .row50{
+  display: flex;
+  gap: 20px;
+}
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50%;
+}
+
+.formBox .row50 .inputBox{
+  width: 100%;
+}
+.inputBox span{
+  color: #238f8d;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.inputBox input{
+  padding: 10px;
+  font-size: 1.1em;
+  outline: nome;
+  border: 1px solid #303842;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
