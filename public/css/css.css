@@ -85,6 +85,20 @@ nav {
   margin-left: 32px;
 }
 
+#imgPerfil{
+  background-color: transparent;
+  border-color: transparent;
+  display: flex ;
+}
+
+#imgPerfil img{
+  width: 65%;
+  height: auto;
+  background-image: url('../img/account-circle.png') no-repeat center center;
+}
+
+
+
 .mobile-menu {
   display: none;
   cursor: pointer;
