@@ -33,7 +33,7 @@ a:hover {
 }
 
 .bg-header-main {
-  background: url("../img/bg2.jpg") no-repeat center center;
+  background: url("../img/bg.jpg") no-repeat center center;
   height: 70vh;
 }
 
@@ -236,7 +236,7 @@ main {
 /* contact */
 .contato {
   background-color: #238f8d;
-  height: auto;
+  height: 17vh;
 }
 
 .contato .container {
@@ -267,6 +267,10 @@ main {
   display: block;
   margin: auto;
 }
+/* contato2 */
+
+
+
 /* form */
 
 
