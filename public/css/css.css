@@ -33,7 +33,7 @@ a:hover {
 }
 
 .bg-header-main {
-  background: url("../img/bg.jpg") no-repeat center center;
+  background: url("../img/bg.png") no-repeat center center;
   height: 70vh;
 }
 
@@ -267,15 +267,6 @@ main {
   display: block;
   margin: auto;
 }
-
-.contato {
-  background-color: #238f8d;
-  height: 90vh;
-}
-
-
-
-
 
 
 
