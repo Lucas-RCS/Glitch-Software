@@ -233,32 +233,52 @@ main {
   transform: rotate(360deg);
 }
 
-/* contact */
-.contato {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+.contact  {
+  width: 100%;
   background-color: #238f8d;
-  height: 20vh;
 }
 
-.contato .container {
+.contact .container {
   width: 80%;
   display: block;
   margin: 0px auto;
   padding: 50px 0px;
 }
 
-.container .titlect {
+.contact .container .title {
   width: 100%;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.container .titlect h1 {
+.contact .container .title h1 {
   text-transform: uppercase;
   font-size: 35px;
   color: white;
 }
 
-.container .titlect h1::after {
+.contact .container .title h1::after {
   content: "";
   height: 5px;
   width: 100px;
@@ -268,7 +288,111 @@ main {
   margin: auto;
 }
 
+.contact .content {
+  float: left;
+  width: 55%;
+  background-color: white;
+  border-radius: 5px;
+}
 
+.contact .image-section {
+  float: right;
+  width: 40%;
+}
+
+.contact .image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.contact .content .article h3 {
+  color: #a3a3a3;
+  font-size: 17px;
+}
+
+.contact .content .article p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.contact .content .article .button {
+  margin-top: 50px;
+}
+
+.contact .content .article .button a {
+  padding: 8px 25px;
+  background-color: #238f8d;
+  border-radius: 40px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.contact .content .article .button a:hover {
+  color: white;
+  background-color: #303842;
+  transition: 1s ease;
+}
+
+.contact .container .social {
+  width: 100%;
+  clear: both;
+  margin-top: 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+.contact .container .social i {
+  color: white;
+  font-size: 22px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #303842;
+  margin: 0px 5px;
+}
+
+.contact .container .social i:hover {
+  color: white;
+  background-color: #238f8d;
+  transition: 1s ease;
+  transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contact .content .formBox{
+  display: grid;
+  position: relative;
+}
+.contact .content .formBox .row50{
+  display: flex;
+  gap: 20px;
+} */
 
 
 
@@ -501,6 +625,7 @@ footer{
   }
 
 }
+
 
 @media screen and (max-width: 765px){
   .footer_content{
