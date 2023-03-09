@@ -1,5 +1,5 @@
 // Scroll suave para link interno
-$('nav a').click(function (e) {
+$('a').click(function (e) {
   e.preventDefault();
   var id = $(this).attr('href'),
     menuHeight = $('nav').innerHeight(),
