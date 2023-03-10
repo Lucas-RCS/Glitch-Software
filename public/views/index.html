@@ -72,48 +72,34 @@
                 <div class="title">
                     <h1>Contate-Nos</h1>
                 </div>
-                <div class="content">
-                    <div class="article">
-                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dignissimos dolore
-                            unde ipsum reiciendis officiis. Quaerat repudiandae illo vero, ipsa labore.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, beatae illum quasi nam, at
-                            dignissimos architecto consectetur mollitia fugiat ut obcaecati quia ullam quae? Ipsa
-                            inventore voluptas deleniti blanditiis totam?</p>
-                        
-                    </div>
-                </div>
-                <div class="image-section">
-                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit earum qui autem sunt
-                        maiores, vitae quam sed molestiae tempora facilis nobis iure eum natus voluptatibus iusto nemo
-                        saepe! Unde, beatae.</h4>
-                </div>
-                <div class="social">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                </div>
-
-
-                <!-- <form action="">
-                        <div class="formBox">
-                            <div class="row50">
-                                <span>Primeiro Nome:</span>
-                                <input type="text" name="name" class="btn-50" placeholder="Primeiro Nome">
+                <section id="contato">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Entre em Contato</h2>
+                                <form action="enviar-email.php" method="POST">
+                                    <input type="text" name="nome" placeholder="Seu nome completo" maxlength="50"
+                                        required>
+                                    <input type="email" name="email" placeholder="Seu e-mail" maxlength="50" required>
+                                    <input type="tel" name="telefone" placeholder="Seu telefone"
+                                    pattern="\(\d{2}\) \d{4}-\d{4}" maxlength="11" required>
+                                    <textarea name="mensagem" placeholder="Digite sua mensagem aqui..."
+                                    maxlength="200" required></textarea>
+                                    <button type="submit">Enviar Mensagem</button>
+                                </form>
                             </div>
-                            <div class="row50">
-                                <span>Ultimo Nome:</span>
-                                <input type="text" name="name" class="btn-50" placeholder="Ultimo Nome">
-                            </div>
-                            <div class="row50">
-                                <span>Email:</span>
-                                <input type="text" name="name" class="btn-50" placeholder="Email">
-                            </div>
-                            <div class="row50">
-                                <span>Telefone:</span>
-                                <input type="text" name="name" class="btn-50" placeholder="Telefone">
+                            <div class="col">
+                                <div class="info">
+                                    <h3>Informações de Contato</h3>
+                                    <p><i class="fa fa-map-marker"></i> Endereço: Rua Exemplo, 123, Cidade - Estado</p>
+                                    <p><i class="fa fa-phone"></i> Telefone: (11) 1234-5678</p>
+                                    <p><i class="fa fa-envelope"></i> E-mail: contato@exemplo.com</p>
+                                </div>
                             </div>
                         </div>
-                    </form> -->
+                    </div>
+                </section>
+
             </div>
             </div>
         </section>

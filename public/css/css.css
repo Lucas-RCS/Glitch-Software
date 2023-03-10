@@ -254,7 +254,7 @@ main {
 
 /* CONTACT */
 
-.contact  {
+.contact {
   width: 100%;
   background-color: #238f8d;
 }
@@ -288,136 +288,115 @@ main {
   margin: auto;
 }
 
-.contact .content {
-  float: left;
-  width: 55%;
-  background-color: white;
+#contato {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+}
+
+#contato .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contato .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contato .col {
+  flex: 1;
+  padding: 0 20px;
+}
+
+#contato h2 {
+  margin-bottom: 40px;
+  color: #238f8d;
+  text-transform: uppercase;
+}
+
+#contato form input[type="text"],
+#contato form input[type="email"],
+#contato form input[type="tel"],
+#contato form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contato form textarea {
+  height: 200px;
+}
+
+#contato form button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #232930;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+#contato form button[type="submit"]:hover{
+  background-color: #238f8d;
+}
+
+#contato .info {
+  background-color: #232930;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
-.contact .image-section {
-  float: right;
-  width: 40%;
+#contato .info h3 {
+  margin-bottom: 20px;
 }
 
-.contact .image-section img {
-  width: 100%;
-  height: auto;
+#contato .info p {
+  margin-bottom: 10px;
 }
 
-.contact .content .article h3 {
-  color: #a3a3a3;
-  font-size: 17px;
-}
-
-.contact .content .article p {
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-}
-
-.contact .content .article .button {
-  margin-top: 50px;
-}
-
-.contact .content .article .button a {
-  padding: 8px 25px;
-  background-color: #238f8d;
-  border-radius: 40px;
-  color: white;
+#contato .info i {
+  margin-right: 10px;
+  color: #238f8d;
   font-size: 18px;
-  letter-spacing: 1.5px;
 }
-
-.contact .content .article .button a:hover {
-  color: white;
-  background-color: #303842;
-  transition: 1s ease;
-}
-
-.contact .container .social {
-  width: 100%;
-  clear: both;
-  margin-top: 50px;
-  text-align: center;
-  display: inline-block;
-}
-
-.contact .container .social i {
-  color: white;
-  font-size: 22px;
-  height: 45px;
-  width: 45px;
-  border-radius: 50px;
-  line-height: 45px;
-  text-align: center;
-  background-color: #303842;
-  margin: 0px 5px;
-}
-
-.contact .container .social i:hover {
-  color: white;
-  background-color: #238f8d;
-  transition: 1s ease;
-  transform: rotate(360deg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .contact .content .formBox{
-  display: grid;
-  position: relative;
-}
-.contact .content .formBox .row50{
-  display: flex;
-  gap: 20px;
-} */
-
-
 
 
 /* FOOTER */
-footer{
+footer {
   width: 100%;
   color: white;
 }
-.footer_content{
+
+.footer_content {
   background-color: #303842;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 3rem 3.5rem;
 }
 
-.footer_contacts h1{
+.footer_contacts h1 {
   margin-bottom: 0.75rem;
 }
-.footer_social_media{
+
+.footer_social_media {
   display: flex;
   gap: 2rem;
   margin-top: 1.5rem;
 }
-.footer_social_media .footer_link{
+
+.footer_social_media .footer_link {
   color: white;
   border-radius: 50%;
   display: flex;
@@ -425,19 +404,22 @@ footer{
   justify-content: center;
   font-size: 30px;
 }
-.footer_social_media .footer_link .facebook:hover{
+
+.footer_social_media .footer_link .facebook:hover {
   color: #4267b3;
   transition: 1s ease;
   transform: rotate(360deg);
   opacity: 0.8;
 }
-.footer_social_media .footer_link .twitter:hover{
+
+.footer_social_media .footer_link .twitter:hover {
   color: #00acee;
   transition: 1s ease;
   transform: rotate(360deg);
   opacity: 0.8;
 }
-.footer_social_media .footer_link .instagram:hover{
+
+.footer_social_media .footer_link .instagram:hover {
   background-image: linear-gradient(#7f37c9, #ff2992, #ff9807);
   border-radius: 30%;
   height: 95%;
@@ -445,38 +427,42 @@ footer{
   transform: rotate(360deg);
   opacity: 0.8;
 }
-.footer_social_media .footer_link .whatsapp:hover{
+
+.footer_social_media .footer_link .whatsapp:hover {
   color: #25d366;
   transition: 1s ease;
   transform: rotate(360deg);
   opacity: 0.8;
-  
+
 }
 
-.footer_social_media .footer_link i{
+.footer_social_media .footer_link i {
   font-size: 1.25rem;
 }
-.footer_list{
+
+.footer_list {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 0.75rem;
 }
-.footer_list .footer_link{
+
+.footer_list .footer_link {
   color: white;
   list-style: none;
 }
-.footer_list .footer_link:hover{
+
+.footer_list .footer_link:hover {
   color: #238f8d;
 }
 
-.footer_img{
+.footer_img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer_copyright{
+.footer_copyright {
   display: flex;
   height: 5vh;
   align-items: center;
@@ -627,18 +613,29 @@ footer{
 }
 
 
-@media screen and (max-width: 765px){
-  .footer_content{
+@media screen and (max-width: 765px) {
+  .footer_content {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 }
 
 
-@media screen and (max-width: 426px){
-  .footer_content{
+@media screen and (max-width: 426px) {
+  .footer_content {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    padding: 20px 0;
   }
 }
 
