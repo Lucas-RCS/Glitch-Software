@@ -328,6 +328,7 @@ main {
 }
 
 #contato .info {
+  margin-top: 40%;
   background-color: #303842;
   color: white;
   padding: 20px;
@@ -595,6 +596,10 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+  #contato .info {
+    margin-top: 0%;
+  }
+
   .row {
     flex-direction: column;
   }
@@ -613,7 +618,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('../img/texture-Log.jpg');
+  background-image: url('../img/texture-Log2.jpg');
 }
 
 .log .login {
@@ -719,7 +724,7 @@ footer {
 }
 
 .log .login .back-button:hover {
-  color: #303842;
+  color: #232930;
 }
 
 @media (max-width: 768px) {
