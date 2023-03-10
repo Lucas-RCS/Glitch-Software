@@ -315,7 +315,7 @@ main {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #232930;
+  background-color: #303842;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -328,7 +328,7 @@ main {
 }
 
 #contato .info {
-  background-color: #232930;
+  background-color: #303842;
   color: white;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -613,7 +613,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f2f2f2;
+  background-image: url('../img/texture-Log.jpg');
 }
 
 .log .login {
@@ -650,14 +650,15 @@ footer {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: #333;
+  background-color: #303842;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .log .login button[type="submit"]:hover {
-  background-color: #111;
+  background-color: #238f8d;
 }
 
 .log .login .separator {
@@ -713,21 +714,19 @@ footer {
   top: 20px;
   left: 20px;
   font-size: 16px;
-  color: #333;
+  color: white;
   text-decoration: none;
 }
 
 .log .login .back-button:hover {
-  text-decoration: underline;
+  color: #303842;
 }
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
   .log .login {
     max-width: none;
   }
 
-  /* Reduz a margem superior do botão de voltar */
   .log .login.back-button {
     top: 10px;
   }
