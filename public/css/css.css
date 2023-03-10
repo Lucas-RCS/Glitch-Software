@@ -25,8 +25,6 @@ a:hover {
   color: #238f8d;
 }
 
-
-
 .space {
   height: 4vh;
   background-color: transparent;
@@ -96,8 +94,6 @@ nav {
   height: auto;
   background-image: url('../img/account-circle.png') no-repeat center center;
 }
-
-
 
 .mobile-menu {
   display: none;
@@ -233,25 +229,6 @@ main {
   transform: rotate(360deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACT */
 
 .contact {
@@ -346,7 +323,7 @@ main {
   transition: 0.5s;
 }
 
-#contato form button[type="submit"]:hover{
+#contato form button[type="submit"]:hover {
   background-color: #238f8d;
 }
 
@@ -371,7 +348,6 @@ main {
   color: #238f8d;
   font-size: 18px;
 }
-
 
 /* FOOTER */
 footer {
@@ -471,16 +447,6 @@ footer {
   font-size: 1.1rem;
   font-weight: 100;
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 999px) {
   body {
@@ -612,7 +578,6 @@ footer {
 
 }
 
-
 @media screen and (max-width: 765px) {
   .footer_content {
     grid-template-columns: repeat(2, 1fr);
@@ -639,7 +604,134 @@ footer {
   }
 }
 
+/* LOGIN */
 
+.log {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.log .login {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+.log .login h2 {
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.log .login input[type="email"],
+.log .login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #333;
+}
+
+.log .login button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.log .login button[type="submit"]:hover {
+  background-color: #111;
+}
+
+.log .login .separator {
+  position: relative;
+  margin: 40px 0;
+}
+
+.log .login .separator:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ccc;
+  transform: translateY(-50%);
+}
+
+.log .login .separator span {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  color: #666;
+}
+
+.log .login.login-google {
+  margin-top: 20px;
+}
+
+.log .login .login-google img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.log .login .login-google a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.log .login.login-google a:hover {
+  text-decoration: underline;
+}
+
+.log .login .back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.log .login .back-button:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .log .login {
+    max-width: none;
+  }
+
+  /* Reduz a margem superior do botão de voltar */
+  .log .login.back-button {
+    top: 10px;
+  }
+}
 
 
 
